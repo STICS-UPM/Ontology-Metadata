@@ -1,16 +1,16 @@
-# XXX Ontology
+# Metadata Ontology
 
-The XXX ontology describes the domain of XXX
+The Metadata ontology describes the STICS datasets metadata.
 
 
 # Purpose and scope of the vocabulary
 
-The purpose of the XXX ontology is to YYYY. 
-The scope of the XXX ontology is limited to ZZZ.
+The purpose of the Metadata ontology is to metadata associated to STICS datasets. 
+The scope of the Metadata ontology is limited to the fields defined for the datasets cataloguing within STICS.
 
 # Ontology prefix and namespace
 
-The XXX ontology prefix is: XXX and it is published under the namespace: https://webdomain.ext/def/domain/subdomain# 
+The Metadata ontology prefix is: md and it is published under the namespace: https://stics.linkeddata.es/datasetdef/metadata# 
 
 # Ontology Conceptualization Image
 
