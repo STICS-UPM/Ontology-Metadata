@@ -1,0 +1,251 @@
+@prefix acore: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix md: <https://stics.linkeddata.es/def/md#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "creator" .
+
+dcterms:description a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "description" .
+
+dcterms:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" .
+
+dcterms:issued a owl:DatatypeProperty ;
+    rdfs:label "issued" .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:DatatypeProperty ;
+    rdfs:label "modified" .
+
+dcterms:publisher a owl:DatatypeProperty ;
+    rdfs:label "publisher" .
+
+dcterms:spatial a owl:DatatypeProperty ;
+    rdfs:label "spatial" .
+
+dcterms:title a owl:AnnotationProperty,
+        owl:DatatypeProperty ;
+    rdfs:label "title" .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+time:TemporalDuration a owl:Class ;
+    rdfs:label "Temporal Duration" .
+
+dcat:DataService a owl:Class ;
+    rdfs:label "Data Service" ;
+    rdfs:subClassOf dcat:Resource .
+
+dcat:Dataset a owl:Class ;
+    rdfs:label "Dataset" ;
+    rdfs:subClassOf dcat:Resource .
+
+dcat:Distribution a owl:Class ;
+    rdfs:label "Distribution" .
+
+dcat:accessService a owl:ObjectProperty ;
+    rdfs:label "access service" .
+
+dcat:distribution a owl:ObjectProperty ;
+    rdfs:label "distribution" .
+
+dcat:endpointDescription a owl:DatatypeProperty ;
+    rdfs:label "endpoint description" .
+
+dcat:endpointURL a owl:DatatypeProperty ;
+    rdfs:label "endpoint u r l" .
+
+dcat:hasVersion a owl:DatatypeProperty ;
+    rdfs:label "has version" .
+
+dcat:mediaType a owl:DatatypeProperty ;
+    rdfs:label "media type" .
+
+dcat:servesDataset a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "serves dataset" .
+
+dcat:theme a owl:DatatypeProperty ;
+    rdfs:label "theme" .
+
+odrl:Action a owl:Class ;
+    rdfs:label "Action" .
+
+odrl:Agreement a owl:Class ;
+    rdfs:label "Agreement" ;
+    rdfs:subClassOf odrl:Policy .
+
+odrl:Constraint a owl:Class ;
+    rdfs:label "Constraint" .
+
+odrl:Duty a owl:Class ;
+    rdfs:label "Duty" ;
+    rdfs:subClassOf odrl:Rule .
+
+odrl:LeftOperand a owl:Class ;
+    rdfs:label "Left Operand" .
+
+odrl:LogicalConstraint a owl:Class ;
+    rdfs:label "Logical Constraint" .
+
+odrl:Offer a owl:Class ;
+    rdfs:label "Offer" ;
+    rdfs:subClassOf odrl:Policy .
+
+odrl:Operator a owl:Class ;
+    rdfs:label "Operator" .
+
+odrl:Permission a owl:Class ;
+    rdfs:label "Permission" ;
+    rdfs:subClassOf odrl:Rule .
+
+odrl:Prohibition a owl:Class ;
+    rdfs:label "Prohibition" ;
+    rdfs:subClassOf odrl:Rule .
+
+odrl:RightOperand a owl:Class ;
+    rdfs:label "Right Operand" .
+
+odrl:Set a owl:Class ;
+    rdfs:label "Set" ;
+    rdfs:subClassOf odrl:Policy .
+
+odrl:action a owl:ObjectProperty ;
+    rdfs:label "action" .
+
+odrl:consequence a owl:ObjectProperty ;
+    rdfs:label "consequence" .
+
+odrl:constraint a owl:ObjectProperty ;
+    rdfs:label "constraint" .
+
+odrl:dataType a owl:DatatypeProperty ;
+    rdfs:label "data type" .
+
+odrl:duty a owl:ObjectProperty ;
+    rdfs:label "duty" .
+
+odrl:hasPolicy a owl:ObjectProperty ;
+    rdfs:label "has policy" .
+
+odrl:implies a owl:ObjectProperty ;
+    rdfs:label "implies" .
+
+odrl:includedIn a owl:ObjectProperty ;
+    rdfs:label "included in" .
+
+odrl:leftOperand a owl:ObjectProperty ;
+    rdfs:label "left operand" .
+
+odrl:obligation a owl:ObjectProperty ;
+    rdfs:label "obligation" .
+
+odrl:operand a owl:ObjectProperty ;
+    rdfs:label "operand" .
+
+odrl:operator a owl:ObjectProperty ;
+    rdfs:label "operator" .
+
+odrl:permission a owl:ObjectProperty ;
+    rdfs:label "permission" .
+
+odrl:prohibition a owl:ObjectProperty ;
+    rdfs:label "prohibition" .
+
+odrl:remedy a owl:ObjectProperty ;
+    rdfs:label "remedy" .
+
+odrl:rightOperand a owl:ObjectProperty ;
+    rdfs:label "right operand" .
+
+odrl:rightOperandReference a owl:DatatypeProperty ;
+    rdfs:label "right operand reference" .
+
+odrl:status a owl:DatatypeProperty ;
+    rdfs:label "status" .
+
+odrl:uid a owl:DatatypeProperty ;
+    rdfs:label "uid" .
+
+odrl:unit a owl:DatatypeProperty ;
+    rdfs:label "unit" .
+
+acore:currentStatus a owl:DatatypeProperty ;
+    rdfs:label "current status" ;
+    rdfs:range xsd:string .
+
+acore:hasFunctionality a owl:DatatypeProperty ;
+    rdfs:label "has functionality" ;
+    rdfs:range xsd:string .
+
+acore:hasRequirement a owl:DatatypeProperty ;
+    rdfs:label "has requirement" ;
+    rdfs:range xsd:string .
+
+acore:serviceProvider a owl:DatatypeProperty ;
+    rdfs:label "service provider" ;
+    rdfs:range xsd:string .
+
+md: a owl:Ontology ;
+    dcterms:contributor "Jorge Almeida" ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    dcterms:creator "María Poveda-Villalón" ;
+    dcterms:description "The metadata ontology for STICS datasets and services."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "The STICS metadata ontology"@en ;
+    vann:preferredNamespacePrefix "md" ;
+    vann:preferredNamespaceUri <https://stics.linkeddata.es/def/md#> ;
+    owl:versionIRI <https://stics.linkeddata.es/def/citser#/1.0.1> ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+md:hasRetentionPeriod a owl:ObjectProperty ;
+    rdfs:label "has retention period" .
+
+md:input a owl:ObjectProperty ;
+    rdfs:label "input" .
+
+md:output a owl:ObjectProperty ;
+    rdfs:label "output" .
+
+md:price a owl:DatatypeProperty ;
+    rdfs:label "price" .
+
+dpv:PersonalData a owl:Class ;
+    rdfs:label "Personal Data" .
+
+dpv:hasPersonalData a owl:ObjectProperty ;
+    rdfs:label "has personal data" .
+
+dcat:Resource a owl:Class ;
+    rdfs:label "Resource" .
+
+odrl:Policy a owl:Class ;
+    rdfs:label "Policy" .
+
+odrl:Rule a owl:Class ;
+    rdfs:label "Rule" .
+

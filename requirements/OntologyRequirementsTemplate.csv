@@ -20,3 +20,12 @@ md14;BVR;;A dataset entity could be derived from another entity.;;;prov:wasDeriv
 md15;BVR;;A provenance activity has a start time.;;;prov:startedAtTime;;;;;
 md16;BVR;;A provenance activity has an end time.;;;prov:endedAtTime;;;;;
 md17;BVR;;A dataset entity has a schema name.;;;schema:name (needed?);;;;;
+md18;BVR;;A data service has an endpoint description;;;;Service market place use case;;;;
+md19;BVR;;A data service has an endpoint URL;;;;Service market place use case;;;;
+md20;BVR;;A data service could serve a dataset;;;;Service market place use case;;;;
+md21;BVR;;A data service has a provider;;;;Service market place use case;;;;
+md22;BVR;;A data service has a current status;;;;Service market place use case;;;;
+md23;BVR;;A data service has requirements;;;;Service market place use case;;;;
+md24;BVR;;A data service has functionalities;;;;Service market place use case;;;;
+md25;BVR;;A data services has a price;;;;Service market place use case;;;;
+md26;BVR;;A data service has policies;;;;Service market place use case;;;;
