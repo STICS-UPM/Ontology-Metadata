@@ -10,7 +10,7 @@ The scope of the Metadata ontology is limited to the fields defined for the data
 
 # Ontology prefix and namespace
 
-The Metadata ontology prefix is: md and it is published under the namespace: https://stics.linkeddata.es/datasetdef/metadata# 
+The Metadata ontology prefix is: md and it is published under the namespace: https://stics.linkeddata.es/def/md# 
 
 # Ontology Conceptualization Image
 
