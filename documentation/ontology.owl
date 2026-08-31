@@ -10,7 +10,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://stics.linkeddata.es/def/md#">
-        <owl:versionIRI rdf:resource="https://stics.linkeddata.es/def/citser#/1.0.1"/>
+        <owl:versionIRI rdf:resource="https://stics.linkeddata.es/def/md#/0.0.1"/>
         <terms:contributor>Jorge Almeida</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-01</terms:created>
         <terms:creator>María Poveda-Villalón</terms:creator>

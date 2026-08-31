@@ -218,7 +218,7 @@ md: a owl:Ontology ;
     dcterms:title "The STICS metadata ontology"@en ;
     vann:preferredNamespacePrefix "md" ;
     vann:preferredNamespaceUri <https://stics.linkeddata.es/def/md#> ;
-    owl:versionIRI <https://stics.linkeddata.es/def/citser#/1.0.1> ;
+    owl:versionIRI <https://stics.linkeddata.es/def/md#/0.0.1> ;
     owl:versionInfo "0.0.1" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 

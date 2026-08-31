@@ -443,7 +443,7 @@
     "@id" : "https://stics.linkeddata.es/def/md#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://stics.linkeddata.es/def/citser#/1.0.1"
+    "@id" : "https://stics.linkeddata.es/def/md#/0.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.1"

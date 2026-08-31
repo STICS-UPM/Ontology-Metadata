@@ -1,5 +1,5 @@
 <https://stics.linkeddata.es/def/md#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://stics.linkeddata.es/def/md#> <http://www.w3.org/2002/07/owl#versionIRI> <https://stics.linkeddata.es/def/citser#/1.0.1> .
+<https://stics.linkeddata.es/def/md#> <http://www.w3.org/2002/07/owl#versionIRI> <https://stics.linkeddata.es/def/md#/0.0.1> .
 <https://stics.linkeddata.es/def/md#> <http://purl.org/dc/terms/contributor> "Jorge Almeida" .
 <https://stics.linkeddata.es/def/md#> <http://purl.org/dc/terms/created> "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://stics.linkeddata.es/def/md#> <http://purl.org/dc/terms/creator> "María Poveda-Villalón" .
