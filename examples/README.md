@@ -1,39 +1,31 @@
-# Ontology Tests
+# Ontology Implementation Examples
 
-This folder contains all the **tests designed to verify that the ontology fulfills its defined requirements**.  
-These tests ensure that the ontology correctly represents the intended knowledge, satisfies competency questions, and aligns with domain and stakeholder needs.
+This folder contains **examples that demonstrate how to use and instantiate the ontology**.  
+These examples illustrate how to create instances (individuals) of the ontology’s classes and how to establish relationships between them.
 
-# Purpose
-The goal of this directory is to store **validation and verification artifacts** that confirm the ontology behaves as expected.  
-Testing helps guarantee the **quality, consistency, and completeness** of the ontology with respect to its requirements.
+## Purpose
+The goal of this directory is to provide **practical examples** that help users understand how to apply the ontology in real-world scenarios or datasets.
 
-# Contents
-Include here any files or scripts used to test the ontology, such as:
+Typical use cases include:
+- Creating individuals that represent real-world entities.  
+- Demonstrating how object and data properties connect instances.  
+- Providing example datasets for testing or validation.  
+- Supporting tutorials or user documentation.
 
-- **Themis tests** — Automated tests written in [Themis](https://themis.linkeddata.es/).
-- **SPARQL queries** — To check that competency questions can be answered using the ontology.  
-- **SHACL validation reports** — To verify data conforms to ontology constraints.  
-- **Automated test scripts** — Implemented in Python, Java, or other languages to run ontology checks.  
-- **Test datasets** — RDF or Turtle files used as input for validation.  
-- **Test reports** — Documents summarizing results of ontology tests.
+## Contents
+Include here any files that contain example data or instance definitions, such as:
 
-# Accepted Formats
-You can use formats such as:
-- `.rq` — SPARQL query files  
-- `.py`, `.sh`, `.ipynb` — Automated testing scripts  
-- `.ttl`, `.rdf`, `.jsonld` — Example data for testing  
-- `.md`, `.pdf` — Reports or documentation of test outcomes  
+- `.ttl` — Example instances in Turtle format  
+- `.rdf` — Example data serialized in RDF/XML  
+- `.jsonld` — Example instances in JSON-LD format  
+- `.owl` — Example ontologies extending or using the main ontology  
 
-# Best Practices
-- Align each test with a **specific requirement or competency question**.  
-- Keep test files **versioned** alongside ontology updates.  
-- Automate testing where possible (e.g., GitHub Actions or CI workflows).  
-- Document the expected outcomes of each test for reproducibility.  
-- Store test data separately from production or example data.
+## Best Practices
+- Ensure examples are **consistent with the latest version** of the ontology.  
+- Include comments or documentation within the files to explain the examples.  
+- Use realistic but fictional data to illustrate usage (avoid sensitive information).  
+- Reference the ontology namespace clearly in all examples.
 
-# Notes
-- This folder is for **requirement validation and ontology testing only** — not for implementation files or SHACL shapes themselves.  
-- Consider organizing subfolders, e.g.:
-  - `/competency-questions/`  
-  - `/automated-tests/`  
-  - `/reports/`
+## Notes
+- This folder is for **examples only** — the ontology definition itself should be stored in the `/ontology` folder.  
+- You may organize examples into subfolders by domain or use case (e.g., `/examples/environment/`, `/examples/healthcare/`).
