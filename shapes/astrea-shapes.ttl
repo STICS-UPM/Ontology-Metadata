@@ -1,0 +1,492 @@
+@prefix mod:   <https://w3id.org/mod#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix acore: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dpv:   <https://w3id.org/dpv#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix md:    <https://stics.linkeddata.es/def/md#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix odrl:  <http://www.w3.org/ns/odrl/2/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+
+<https://astrea.linkeddata.es/shapes#ccda8e59fc2e5cc76f11ccfdf5652f88>
+        a               sh:NodeShape ;
+        rdfs:label      "Rule" ;
+        sh:name         "Rule" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Rule .
+
+<https://astrea.linkeddata.es/shapes#811d474a3cb2b3f92b0cd9439e19d636>
+        a               sh:NodeShape ;
+        rdfs:label      "Duty" ;
+        sh:name         "Duty" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Duty .
+
+<https://astrea.linkeddata.es/shapes#3eb1053bfb8d8e3227c72df7638cd75d>
+        a               sh:NodeShape ;
+        rdfs:label      "Distribution" ;
+        sh:name         "Distribution" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  dcat:Distribution .
+
+<https://astrea.linkeddata.es/shapes#f044933d93b16441a55dd02479407de3>
+        a            sh:PropertyShape ;
+        rdfs:label   "serves dataset" ;
+        sh:name      "serves dataset" ;
+        sh:nodeKind  sh:Literal , sh:BlankNodeOrIRI ;
+        sh:path      dcat:servesDataset .
+
+<https://astrea.linkeddata.es/shapes#c171a4d1b4db29c93450acdf7d07b71e>
+        a               sh:NodeShape ;
+        rdfs:label      "Offer" ;
+        sh:name         "Offer" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Offer .
+
+<https://astrea.linkeddata.es/shapes#a14a066714a667306ac1eafd15a782c3>
+        a            sh:PropertyShape ;
+        rdfs:label   "price" ;
+        sh:name      "price" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      md:price .
+
+<https://astrea.linkeddata.es/shapes#3e2f60daa912b4bbfdda79d75fe2752b>
+        a            sh:PropertyShape ;
+        rdfs:label   "modified" ;
+        sh:name      "modified" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:modified .
+
+<https://astrea.linkeddata.es/shapes#079e8ccf2a31bdcc3f086be7e11fda8b>
+        a            sh:PropertyShape ;
+        rdfs:label   "access service" ;
+        sh:name      "access service" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      dcat:accessService .
+
+<https://astrea.linkeddata.es/shapes#d55bce606c0526cfdd110cccb06d33c4>
+        a            sh:PropertyShape ;
+        rdfs:label   "distribution" ;
+        sh:name      "distribution" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      dcat:distribution .
+
+<https://astrea.linkeddata.es/shapes#bc75414ec0d945cfe5dbea6dc17bd655>
+        a            sh:PropertyShape ;
+        rdfs:label   "obligation" ;
+        sh:name      "obligation" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:obligation .
+
+<https://astrea.linkeddata.es/shapes#025bf3cef741393e858905f671216102>
+        a            sh:PropertyShape ;
+        rdfs:label   "service provider" ;
+        sh:datatype  xsd:string ;
+        sh:name      "service provider" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      acore:serviceProvider ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#1aca4d21dcf2d0aa81a243dc2dbb6877>
+        a            sh:PropertyShape ;
+        rdfs:label   "endpoint description" ;
+        sh:name      "endpoint description" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcat:endpointDescription .
+
+<https://astrea.linkeddata.es/shapes#03359ab6b2496e238ae6162b2a2abe18>
+        a            sh:PropertyShape ;
+        rdfs:label   "constraint" ;
+        sh:name      "constraint" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:constraint .
+
+<https://astrea.linkeddata.es/shapes#214dad279099fe939bfc9690bedbeacd>
+        a            sh:PropertyShape ;
+        rdfs:label   "included in" ;
+        sh:name      "included in" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:includedIn .
+
+<https://astrea.linkeddata.es/shapes#6da91246d18f13f0f0f3aacb1a08e631>
+        a               sh:NodeShape ;
+        rdfs:label      "Left Operand" ;
+        sh:name         "Left Operand" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:LeftOperand .
+
+<https://astrea.linkeddata.es/shapes#abcbc6c65cb325168fe715e373960e7c>
+        a            sh:PropertyShape ;
+        rdfs:label   "creator" ;
+        sh:name      "creator" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:creator .
+
+<https://astrea.linkeddata.es/shapes#65cc53835f670a374bfb6da10f080d2f>
+        a               sh:NodeShape ;
+        rdfs:label      "Temporal Duration" ;
+        sh:name         "Temporal Duration" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  time:TemporalDuration .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#87d7a1586e78ed925101e26d724e244b>
+        a               sh:NodeShape ;
+        rdfs:label      "Logical Constraint" ;
+        sh:name         "Logical Constraint" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:LogicalConstraint .
+
+<https://astrea.linkeddata.es/shapes#1ea1de83ed72fce958b220c46d77aba3>
+        a            sh:PropertyShape ;
+        rdfs:label   "data type" ;
+        sh:name      "data type" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      odrl:dataType .
+
+<https://astrea.linkeddata.es/shapes#652532405185e960135fcad29b4aac81>
+        a            sh:PropertyShape ;
+        rdfs:label   "endpoint u r l" ;
+        sh:name      "endpoint u r l" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcat:endpointURL .
+
+<https://astrea.linkeddata.es/shapes#f80d88928bff80f75a35d751949d111f>
+        a            sh:PropertyShape ;
+        rdfs:label   "left operand" ;
+        sh:name      "left operand" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:leftOperand .
+
+<https://astrea.linkeddata.es/shapes#da986faeb9bd844d7c600f14473db5b7>
+        a            sh:PropertyShape ;
+        rdfs:label   "operator" ;
+        sh:name      "operator" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:operator .
+
+<https://astrea.linkeddata.es/shapes#c23b7cab33cc8e693b81c36371c09e1b>
+        a            sh:PropertyShape ;
+        rdfs:label   "input" ;
+        sh:name      "input" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      md:input .
+
+<https://astrea.linkeddata.es/shapes#39a65112dc5162f7fb0ced0e2f877a3f>
+        a            sh:PropertyShape ;
+        rdfs:label   "right operand" ;
+        sh:name      "right operand" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:rightOperand .
+
+<https://astrea.linkeddata.es/shapes#3ed0db774cf3d2c2feb7c48d81c8c139>
+        a            sh:PropertyShape ;
+        rdfs:label   "remedy" ;
+        sh:name      "remedy" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:remedy .
+
+<https://astrea.linkeddata.es/shapes#d9e428dd4f4226973249655d91730a82>
+        a            sh:PropertyShape ;
+        rdfs:label   "has retention period" ;
+        sh:name      "has retention period" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      md:hasRetentionPeriod .
+
+<https://astrea.linkeddata.es/shapes#c55a6e0b5bfe9d04b6efeb14400a1441>
+        a            sh:PropertyShape ;
+        rdfs:label   "operand" ;
+        sh:name      "operand" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:operand .
+
+<https://astrea.linkeddata.es/shapes#8abc67b4dc8bee7e99cdcf0fa5d7ea24>
+        a            sh:PropertyShape ;
+        rdfs:label   "status" ;
+        sh:name      "status" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      odrl:status .
+
+<https://astrea.linkeddata.es/shapes#f5a14a63b523dd7e63d6317e9157f723>
+        a            sh:PropertyShape ;
+        rdfs:label   "unit" ;
+        sh:name      "unit" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      odrl:unit .
+
+<https://astrea.linkeddata.es/shapes#e5d9b581a7c0480c5ead60ff5ab75cba>
+        a            sh:PropertyShape ;
+        rdfs:label   "has personal data" ;
+        sh:name      "has personal data" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      dpv:hasPersonalData .
+
+<https://astrea.linkeddata.es/shapes#0c618280d1882f0aecd25a5dcea1e7b1>
+        a               sh:NodeShape ;
+        rdfs:label      "Personal Data" ;
+        sh:name         "Personal Data" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  dpv:PersonalData .
+
+<https://astrea.linkeddata.es/shapes#14392b0c3132a949426aa8a7f161662e>
+        a            sh:PropertyShape ;
+        rdfs:label   "has requirement" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has requirement" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      acore:hasRequirement ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#1300e4b50895c3a8edf990bfeb6b200c>
+        a               sh:NodeShape ;
+        rdfs:label      "Data Service" ;
+        sh:name         "Data Service" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  dcat:DataService .
+
+<https://astrea.linkeddata.es/shapes#909e395519778fb993626b53439caa9a>
+        a               sh:NodeShape ;
+        rdfs:label      "Operator" ;
+        sh:name         "Operator" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Operator .
+
+<https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508>
+        a            sh:PropertyShape ;
+        rdfs:label   "identifier" ;
+        sh:name      "identifier" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:identifier .
+
+<https://astrea.linkeddata.es/shapes#c2c6c31a46eabf1864f27370011f8527>
+        a            sh:PropertyShape ;
+        rdfs:label   "action" ;
+        sh:name      "action" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:action .
+
+<https://astrea.linkeddata.es/shapes#2d50f6b93dde37941b94508a27a352af>
+        a            sh:PropertyShape ;
+        rdfs:label   "consequence" ;
+        sh:name      "consequence" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:consequence .
+
+<https://astrea.linkeddata.es/shapes#6243a8aa878de14e742ec1dd54e17713>
+        a               sh:NodeShape ;
+        rdfs:label      "Policy" ;
+        sh:name         "Policy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Policy .
+
+<https://astrea.linkeddata.es/shapes#22a181f3164f2fc4d3d32483949b3fe7>
+        a               sh:NodeShape ;
+        rdfs:label      "Action" ;
+        sh:name         "Action" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Action .
+
+<https://astrea.linkeddata.es/shapes#7972456f67a353b2181e00d548e539db>
+        a            sh:PropertyShape ;
+        rdfs:label   "duty" ;
+        sh:name      "duty" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:duty .
+
+<https://astrea.linkeddata.es/shapes#5e317941e63e914597df71864e4739b6>
+        a            sh:PropertyShape ;
+        rdfs:label   "right operand reference" ;
+        sh:name      "right operand reference" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      odrl:rightOperandReference .
+
+<https://astrea.linkeddata.es/shapes#0ce6b231410bfe6db622a3e8ae338a4f>
+        a            sh:PropertyShape ;
+        rdfs:label   "theme" ;
+        sh:name      "theme" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcat:theme .
+
+<https://astrea.linkeddata.es/shapes#feda1d30c2a4aaf5aebe979e5a0810da>
+        a            sh:PropertyShape ;
+        rdfs:label   "description" ;
+        sh:name      "description" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:description .
+
+<https://astrea.linkeddata.es/shapes#0bcf60690c847c8a7562b8f6739e8a2f>
+        a               sh:NodeShape ;
+        rdfs:label      "Set" ;
+        sh:name         "Set" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Set .
+
+<https://astrea.linkeddata.es/shapes#e40060273ac92dd5178441148384d13d>
+        a               sh:NodeShape ;
+        rdfs:label      "Permission" ;
+        sh:name         "Permission" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Permission .
+
+<https://astrea.linkeddata.es/shapes#8912297431969ffe419dd1994f2ad182>
+        a            sh:PropertyShape ;
+        rdfs:label   "has functionality" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has functionality" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      acore:hasFunctionality ;
+        sh:pattern   ".*" .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#dfde5bb2b3ec5d6c60aefd63d783164e> , <https://astrea.linkeddata.es/shapes#c6e46bffd901fb2b3f28dbecc7865584> , <https://astrea.linkeddata.es/shapes#abcbc6c65cb325168fe715e373960e7c> , <https://astrea.linkeddata.es/shapes#d5e1140e8446e34d65600ae8c135af6a> , <https://astrea.linkeddata.es/shapes#811d474a3cb2b3f92b0cd9439e19d636> , <https://astrea.linkeddata.es/shapes#65cc53835f670a374bfb6da10f080d2f> , <https://astrea.linkeddata.es/shapes#d9e428dd4f4226973249655d91730a82> , <https://astrea.linkeddata.es/shapes#3e2f60daa912b4bbfdda79d75fe2752b> , <https://astrea.linkeddata.es/shapes#bc75414ec0d945cfe5dbea6dc17bd655> , <https://astrea.linkeddata.es/shapes#2d50f6b93dde37941b94508a27a352af> , <https://astrea.linkeddata.es/shapes#3ed0db774cf3d2c2feb7c48d81c8c139> , <https://astrea.linkeddata.es/shapes#235f9b68c979ad88b4fa68eb2d6108d6> , <https://astrea.linkeddata.es/shapes#6da91246d18f13f0f0f3aacb1a08e631> , <https://astrea.linkeddata.es/shapes#fc81b2b4bc3f67de8ba11656cf457406> , <https://astrea.linkeddata.es/shapes#6243a8aa878de14e742ec1dd54e17713> , <https://astrea.linkeddata.es/shapes#3eb1053bfb8d8e3227c72df7638cd75d> , <https://astrea.linkeddata.es/shapes#eed79fac5e674e0851bfda55425cab3a> , <https://astrea.linkeddata.es/shapes#0ce6b231410bfe6db622a3e8ae338a4f> , <https://astrea.linkeddata.es/shapes#e5678f797921a8a3ecc7f84164af530c> , <https://astrea.linkeddata.es/shapes#c86e1300081580fd7066f7bfd3f7fc11> , <https://astrea.linkeddata.es/shapes#a9116c9ba83b2fe79470edc937e2ea45> , <https://astrea.linkeddata.es/shapes#03359ab6b2496e238ae6162b2a2abe18> , <https://astrea.linkeddata.es/shapes#ea556b188baca437132717205370ebce> , <https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508> , <https://astrea.linkeddata.es/shapes#c55a6e0b5bfe9d04b6efeb14400a1441> , <https://astrea.linkeddata.es/shapes#5e317941e63e914597df71864e4739b6> , <https://astrea.linkeddata.es/shapes#39a65112dc5162f7fb0ced0e2f877a3f> , <https://astrea.linkeddata.es/shapes#da986faeb9bd844d7c600f14473db5b7> , <https://astrea.linkeddata.es/shapes#7972456f67a353b2181e00d548e539db> , <https://astrea.linkeddata.es/shapes#52a2fd93f25a2ce20611ed02f63f66e9> , <https://astrea.linkeddata.es/shapes#909e395519778fb993626b53439caa9a> , <https://astrea.linkeddata.es/shapes#e40060273ac92dd5178441148384d13d> , <https://astrea.linkeddata.es/shapes#1300e4b50895c3a8edf990bfeb6b200c> , <https://astrea.linkeddata.es/shapes#025bf3cef741393e858905f671216102> , <https://astrea.linkeddata.es/shapes#9259d4c1ba62f9565e7a21a70687ecb1> , <https://astrea.linkeddata.es/shapes#ccda8e59fc2e5cc76f11ccfdf5652f88> , <https://astrea.linkeddata.es/shapes#bed21b12435bd1a3b0277246cb92f4d2> , <https://astrea.linkeddata.es/shapes#652532405185e960135fcad29b4aac81> , <https://astrea.linkeddata.es/shapes#a14a066714a667306ac1eafd15a782c3> , <https://astrea.linkeddata.es/shapes#3f2ae919e9c05cd1b735ab4f438ab19b> , <https://astrea.linkeddata.es/shapes#8912297431969ffe419dd1994f2ad182> , <https://astrea.linkeddata.es/shapes#1ea1de83ed72fce958b220c46d77aba3> , <https://astrea.linkeddata.es/shapes#22a181f3164f2fc4d3d32483949b3fe7> , <https://astrea.linkeddata.es/shapes#fa92e9b0e6e2805da4179a8fbab7ff8e> , <https://astrea.linkeddata.es/shapes#c171a4d1b4db29c93450acdf7d07b71e> , <https://astrea.linkeddata.es/shapes#1d0770434caf34ee3aebad793117868a> , <https://astrea.linkeddata.es/shapes#1aca4d21dcf2d0aa81a243dc2dbb6877> , <https://astrea.linkeddata.es/shapes#c2c6c31a46eabf1864f27370011f8527> , <https://astrea.linkeddata.es/shapes#f5a14a63b523dd7e63d6317e9157f723> , <https://astrea.linkeddata.es/shapes#d55bce606c0526cfdd110cccb06d33c4> , <https://astrea.linkeddata.es/shapes#c2dfb60d11d3f4a471d29de76728e2b8> , <https://astrea.linkeddata.es/shapes#87d7a1586e78ed925101e26d724e244b> , <https://astrea.linkeddata.es/shapes#9a85dfab2d4ec8517692801f36a5d05d> , <https://astrea.linkeddata.es/shapes#14392b0c3132a949426aa8a7f161662e> , <https://astrea.linkeddata.es/shapes#0c618280d1882f0aecd25a5dcea1e7b1> , <https://astrea.linkeddata.es/shapes#8abc67b4dc8bee7e99cdcf0fa5d7ea24> , <https://astrea.linkeddata.es/shapes#e5d9b581a7c0480c5ead60ff5ab75cba> , <https://astrea.linkeddata.es/shapes#214dad279099fe939bfc9690bedbeacd> , <https://astrea.linkeddata.es/shapes#34eb8a657bec5830b73d1fc629eda09e> , <https://astrea.linkeddata.es/shapes#feda1d30c2a4aaf5aebe979e5a0810da> , <https://astrea.linkeddata.es/shapes#c23b7cab33cc8e693b81c36371c09e1b> , <https://astrea.linkeddata.es/shapes#f80d88928bff80f75a35d751949d111f> , <https://astrea.linkeddata.es/shapes#f044933d93b16441a55dd02479407de3> , <https://astrea.linkeddata.es/shapes#0bcf60690c847c8a7562b8f6739e8a2f> , <https://astrea.linkeddata.es/shapes#079e8ccf2a31bdcc3f086be7e11fda8b> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#3f2ae919e9c05cd1b735ab4f438ab19b>
+        a            sh:PropertyShape ;
+        rdfs:label   "title" ;
+        sh:name      "title" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:title .
+
+<https://astrea.linkeddata.es/shapes#bed21b12435bd1a3b0277246cb92f4d2>
+        a               sh:NodeShape ;
+        rdfs:label      "Dataset" ;
+        sh:name         "Dataset" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  dcat:Dataset .
+
+<https://astrea.linkeddata.es/shapes#dfde5bb2b3ec5d6c60aefd63d783164e>
+        a            sh:PropertyShape ;
+        rdfs:label   "has policy" ;
+        sh:name      "has policy" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:hasPolicy .
+
+<https://astrea.linkeddata.es/shapes#fa92e9b0e6e2805da4179a8fbab7ff8e>
+        a            sh:PropertyShape ;
+        rdfs:label   "media type" ;
+        sh:name      "media type" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcat:mediaType .
+
+<https://astrea.linkeddata.es/shapes#e5678f797921a8a3ecc7f84164af530c>
+        a            sh:PropertyShape ;
+        rdfs:label   "has version" ;
+        sh:name      "has version" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcat:hasVersion .
+
+<https://astrea.linkeddata.es/shapes#ea556b188baca437132717205370ebce>
+        a            sh:PropertyShape ;
+        rdfs:label   "prohibition" ;
+        sh:name      "prohibition" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:prohibition .
+
+<https://astrea.linkeddata.es/shapes#1d0770434caf34ee3aebad793117868a>
+        a               sh:NodeShape ;
+        rdfs:label      "Resource" ;
+        sh:name         "Resource" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  dcat:Resource .
+
+<https://astrea.linkeddata.es/shapes#235f9b68c979ad88b4fa68eb2d6108d6>
+        a            sh:PropertyShape ;
+        rdfs:label   "uid" ;
+        sh:name      "uid" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      odrl:uid .
+
+<https://astrea.linkeddata.es/shapes#a9116c9ba83b2fe79470edc937e2ea45>
+        a               sh:NodeShape ;
+        rdfs:label      "Agreement" ;
+        sh:name         "Agreement" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Agreement .
+
+<https://astrea.linkeddata.es/shapes#fc81b2b4bc3f67de8ba11656cf457406>
+        a               sh:NodeShape ;
+        rdfs:label      "Constraint" ;
+        sh:name         "Constraint" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Constraint .
+
+<https://astrea.linkeddata.es/shapes#eed79fac5e674e0851bfda55425cab3a>
+        a               sh:NodeShape ;
+        rdfs:label      "Right Operand" ;
+        sh:name         "Right Operand" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:RightOperand .
+
+<https://astrea.linkeddata.es/shapes#c2dfb60d11d3f4a471d29de76728e2b8>
+        a            sh:PropertyShape ;
+        rdfs:label   "output" ;
+        sh:name      "output" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      md:output .
+
+<https://astrea.linkeddata.es/shapes#9a85dfab2d4ec8517692801f36a5d05d>
+        a            sh:PropertyShape ;
+        rdfs:label   "current status" ;
+        sh:datatype  xsd:string ;
+        sh:name      "current status" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      acore:currentStatus ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#9259d4c1ba62f9565e7a21a70687ecb1>
+        a            sh:PropertyShape ;
+        rdfs:label   "publisher" ;
+        sh:name      "publisher" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:publisher .
+
+<https://astrea.linkeddata.es/shapes#52a2fd93f25a2ce20611ed02f63f66e9>
+        a            sh:PropertyShape ;
+        rdfs:label   "implies" ;
+        sh:name      "implies" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:implies .
+
+<https://astrea.linkeddata.es/shapes#c6e46bffd901fb2b3f28dbecc7865584>
+        a            sh:PropertyShape ;
+        rdfs:label   "spatial" ;
+        sh:name      "spatial" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:spatial .
+
+<https://astrea.linkeddata.es/shapes#c86e1300081580fd7066f7bfd3f7fc11>
+        a            sh:PropertyShape ;
+        rdfs:label   "issued" ;
+        sh:name      "issued" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dcterms:issued .
+
+<https://astrea.linkeddata.es/shapes#34eb8a657bec5830b73d1fc629eda09e>
+        a               sh:NodeShape ;
+        rdfs:label      "Prohibition" ;
+        sh:name         "Prohibition" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  odrl:Prohibition .
+
+<https://astrea.linkeddata.es/shapes#d5e1140e8446e34d65600ae8c135af6a>
+        a            sh:PropertyShape ;
+        rdfs:label   "permission" ;
+        sh:name      "permission" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      odrl:permission .
